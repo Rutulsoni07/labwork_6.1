@@ -1,0 +1,41 @@
+
+
+Q.5 Write a Program to print leap years between two given numbers using a while loop.
+
+
+INPUT=
+#include <stdio.h>
+
+int main() {
+    int first_year,end_year,year;
+  printf("enter the first year:");
+  scanf("%d",&first_year);
+  
+  printf("enter the end year:");
+  scanf("%d",&end_year);
+  year=first_year;
+  
+  while(year <= end_year){
+      if((year % 4 == 0 && year % 100!= 0) || year % 400 == 0){
+          printf("\n%d",year);
+          }
+          year++;
+  }
+  
+      return 0;
+}
+
+OUTPUT=
+enter the first year:2000
+enter the end year:2040
+2000
+2004
+2008
+2012
+2016
+2020
+2024
+2028
+2032
+2036
+2040
